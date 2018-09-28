@@ -8,8 +8,8 @@
 
   .bss-body-text {
 
-     // custom content headline
-     font-family: $font-title-02;
+   // custom content headline
+  font-family: $font-title-02;
 
    }
   .bss-lineheight{
@@ -45,7 +45,7 @@
   @include bp($sm){
   margin-top: 15px;
   margin-bottom: 30px;
-    content: url(../img/icons/raute.png);
+  content: url(../img/icons/raute.png);
   }
 
 }
@@ -60,10 +60,15 @@
 
 
 .bss-banner-margin-top{
-
-margin-top:-150px;
+  margin-top:-150px;
 }
 
+@media only screen and (max-width: 800px) {
+
+.bss-mob-align{
+  text-align: center;
+}
+}
 
 
 
@@ -85,6 +90,7 @@ margin-top:-150px;
     padding: 16px 28px;
     cursor: pointer;
 }
+
 .bss-btn-blue:hover{
 
   font-family: $font-title-02;
@@ -102,7 +108,7 @@ margin-top:-150px;
 
 .bss-btn-outline{
 
-        font-size: 0.9rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #25b3e8;
@@ -115,11 +121,9 @@ margin-top:-150px;
 
 
 .bss-btn-outline:hover{
-
   color: #fff;
     background-color: #25b3e8;
 }
-
 
 .bss-btn-outline::before{
   content: url(../img/icons/leaves-left.png);
@@ -152,6 +156,22 @@ margin-top:-150px;
 }
 
 
+.bss-hidden{ display: none; }
+.bss-show{ display: block; }
+
+@media only screen and (max-width: 1024px) {
+  .bss-show{ display: none; }
+}
+
+@media only screen and (max-width: 900px) {
+  .bss-hidden{ display: block; }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .bss-mob-hide{display: none;}
+  .bss-hidden{ display: none; }
+}
 
 
 /* ==========================================================================
@@ -160,63 +180,111 @@ margin-top:-150px;
 
 .bss-parallax{
   background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
     &--darkest   {
       background-attachment: fixed;
-    background-color: rgba(0,0,0,0.8);
-    background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.8);
+      background-blend-mode: multiply;
       background-position: center;
       background-size: cover;}
       &--darker   {
-        background-attachment: fixed;
+      background-attachment: fixed;
       background-color: rgba(0,0,0,0.7);
       background-blend-mode: multiply;
-        background-position: center;
-        background-size: cover;}
+      background-position: center;
+      background-size: cover;}
+
       &--dark   {
-        background-attachment: fixed;
-        background-color: rgba(0,0,0,0.6);
-        background-blend-mode: multiply;
-          background-position: center;
-          background-size: cover;}
+      background-attachment: fixed;
+      background-color: rgba(0,0,0,0.6);
+      background-blend-mode: multiply;
+      background-position: center;
+      background-size: cover;}
 
       &--lightest   {
-        background-attachment: fixed;
+      background-attachment: fixed;
       background-color: rgba(250,250,250,0.9);
       background-blend-mode: lighten;
-        background-position: center;
-        background-size: cover;
+      background-position: center;
+      background-size: cover;
       }
 
       &--lighter   {
-        background-attachment: fixed;
+      background-attachment: fixed;
       background-color: rgba(250,250,250,0.7);
       background-blend-mode: lighten;
-        background-position: center;
-        background-size: cover;
+      background-position: center;
+      background-size: cover;
       }
       &--light   {
-        background-attachment: fixed;
+      background-attachment: fixed;
       background-color: rgba(250,250,250,0.6);
       background-blend-mode: color;
-        background-position: center;
-        background-size: cover; }
+      background-position: center;
+      background-size: cover; }
 
 }
 
 
+@media only screen and (max-width: 1024px) {
+
+.bss-remove-bg{
+
+  background-image: none!important;
+
+  &--black{
+
+    background-image: none!important;
+    background-color: #000;
+
+}
+
+}
+
+    .bss-parallax{
+      background-attachment: scroll;
+      background-size: cover;
+
+
+    &--darkest   {
+      background-attachment: scroll;
+      background-size: cover;
+    }
+      &--darker   {
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      &--dark   {
+        background-attachment: scroll;
+        background-size: cover;
+        }
+
+      &--lighter   {
+        background-attachment: scroll;
+        background-size: cover;
+
+      }
+      &--light   {
+        background-attachment: scroll;
+        background-size: cover;
+     }
+      }
+
+}
 
 /* ==========================================================================
    Gallery
    ========================================================================== */
+
 .bss-modal-thumbn{
-   background-size: cover;
-    padding: 190px 10px 10px;
-    background-position: bottom;
+  background-size: cover;
+  padding: 190px 10px 10px;
+  background-position: bottom;
 }
+
 .bss-modal-thumbn-text{
   margin:10px;
   padding:10px;
@@ -239,31 +307,25 @@ margin-top:-150px;
 /* Modal Content */
 .pt-modal-content-details {
   position: absolute;
-height: 100%;
-max-height: 620px;
-width: 100%;
-margin: auto;
-
-padding:0 55px;
-
- top: 0; left: 0; bottom: 0; right: 0;
- overflow: auto;
+  height: 100%;
+  max-height: 620px;
+  width: 100%;
+  margin: auto;
+  padding:0 55px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  overflow: auto;
 }
 
 
 .pt-mySlides {
   /*display: none;*/
- margin: auto;
-
-max-width:800px;
-width:100%;
-
+  margin: auto;
+  max-width:800px;
+  width:100%;
   background-color: #fff;
-
 }
 
 .pt-highlight-modal-img{
-/*max-height:350px;*/
   width: 100%;
   max-width: 800px;
   padding-top: 49%;
@@ -271,15 +333,15 @@ width:100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .pt-highlight-modal-text{
-/**/padding:15px 30px 30px;
+  padding:15px 30px 30px;
 }
 
 
 
 /* The Close Button */
 .pt-close {
-
     position: absolute;
     background-size:16px;
     top: 0px;
@@ -287,17 +349,17 @@ width:100%;
     background-image: url('../img/icons/close-dark.svg');
     background-repeat: no-repeat;
     background-position: center center;
-width: 55px;
-height: 55px;
-  background-color: #fff;
-  z-index:999;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    z-index:999;
 
 }
 
 .pt-close:hover,
 .pt-close:focus {
   background-image: url('../img/icons/close.svg');
-    background-color: #26c9f9;
+  background-color: #26c9f9;
   text-decoration: none;
   cursor: pointer;
 }
@@ -312,16 +374,16 @@ height: 55px;
 .pt-next {
   cursor: pointer;
   background-size:16px;
- top: 46%;
+  top: 46%;
   position: absolute;
   font-weight: bold;
-width: 55px;
-height: 100px;
+  width: 55px;
+  height: 100px;
   transition: 0.3s ease;
   user-select: none;
   -webkit-user-select: none;
   z-index:999;
-display: none;
+  display: none;
   background-color: #fff;
 }
 
@@ -332,6 +394,7 @@ display: none;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .pt-prev {
   left: 0;
   background-image: url('../img/icons/arrow-left-dark.svg');
@@ -344,6 +407,7 @@ display: none;
   background-color: #26c9f9;
   background-image: url('../img/icons/arrow-left.svg');
 }
+
 .pt-next:hover {
   background-color: #26c9f9;
   background-image: url('../img/icons/arrow-right.svg');
@@ -354,39 +418,33 @@ display: none;
   .pt-prev,
   .pt-next {
       position: absolute;
-    cursor: pointer;
-    background-size:16px;
-  top:100%;
-   bottom: 50%;
-
-    margin-top: -50px;
-    font-weight: bold;
-  width: 49.9%;
-  height: 55px;
-    transition: 0.3s ease;
-
-    user-select: none;
-    -webkit-user-select: none;
-    z-index:999;
-  display: none;
-    background-color: #26c9f9;
-
+      cursor: pointer;
+      background-size:16px;
+      top:100%;
+      bottom: 50%;
+      margin-top: -50px;
+      font-weight: bold;
+      width: 49.9%;
+      height: 55px;
+      transition: 0.3s ease;
+      user-select: none;
+      -webkit-user-select: none;
+      z-index:999;
+      display: none;
+      background-color: #fff;
 }
-.bss-close {
 
-  background-color: #26c9f9;
 
-}
+
 .pt-modal-content-details {
   padding: 0;
-bottom: 60px;
-max-height: 450px;
-}}
+  bottom: 60px;
+  max-height: 450px;
+}
+
+}
 
 /* Number text (1/3 etc) */
-
-
-
 
 
 .pt-active,
@@ -403,140 +461,6 @@ img.hover-shadow {
 }
 
 
-
-
-/*
- ==========================================================================
-   Offers
-   ==========================================================================
-
-
-.bss-offer-tile {
-	width: 70%;
-	margin: 70px 15%;
-	transition:all ease 0.3s
-}
-
-
-.bss-overview-offers {
-	background: url(../images/overview-offers-bg.jpg) no-repeat center fixed;
-	padding-bottom: 90px;
-}
-.bss-offer-img {
-	width:50%;
-	float:left;
-	min-height: 250px;
-
-  float: left;
-	background-size:cover
-}
-
-.bss-offer-text {
-	width:50%;
-	float:right;
-	background-color: #fff;
-	padding: 42px;
-}
-
-.bss-offer-text h2 {
-	text-transform:none;
-	font-weight:600;
-	font-size:1.5rem;
-	margin-bottom:6px
-}
-
-.bss-offer-text h4 {
-	text-transform:none;
-	font-weight:600;
-	font-size:0.85rem;
-	color:#c32033;
-	margin-bottom:18px
-}
-
-.bss-offer-text p {
-	text-transform:none;
-	font-weight:300;
-	font-size:1rem;
-	color:#121212;
-	margin-bottom:24px
-}
-
-.bss-offer-text ul {
-	margin-bottom:24px
-}
-
-.bss-offer-text li {
-	text-transform:none;
-	font-weight:300;
-	font-size:1rem;
-	list-style:disc;
-	margin-left:18px
-}
-
-.offer-text .offer-price {
-	color:#c32033;
-}
-
-
-.bss-offer-text {
-	background-color:#eeeeee;
-	padding:14px 20px;
-	color:#595959;
-	transition:all ease 0.3s
-}
-
-.bss-offer-tile:hover .bss-offer-text .btn {
-	background-color:#c32033;
-	color:#fff
-}
-
-.bss-etihad-banner .bss-offer-tile:hover .bss-offer-text .btn {
-	background-color:#cb9800;
-	color:#fff
-}
-
-.bss-content-cta {
-    text-align:center;
-    margin:auto
-}
-
-.bss-offers {
-    width: 100%;
-    margin: 0px auto;
-    padding: 75px 0;
-    background-color: #fbe3ca;
-    background-size: 150px;
-    text-align: center;
-}
-
-
-@media (max-width:930px) {
-
-	.bss-offer-img {
-		width:100%;
-		float:left;
-		height: 300px;
-		background-size:cover
-	}
-
-	.bss-offer-text {
-		width:100%;
-		float:left;
-		background-color: #fff;
-		padding: 42px;
-	}
-}
-
-@media (max-width:570px) {
-
-	.bss-offer-tile {
-		width: 100%;
-		margin:0;
-		transition:all ease 0.3s
-	}
-
-
-} */
 
 
 /*

@@ -3,7 +3,7 @@ layout: default
 id: overview
 nav: false
 nav-order: 1
-title: Übersicht
+title: Urlaub für Augenmenschen
 intro: "Entdecken Sie die lange Geschichte und das moderne Leben Bayerns: Burgen und Schlösser, Kunst und Kultur, Schätze der Vergangenheit, Klöster und historische Orte schaffen eine unübertroffene kulturelle Vielfalt. Die Marke Sightsleeping® führt Sie zu den kulturellen und historischen Highlights Bayerns und lädt Sie ein, in ausgewählten Unterkünften und an einzigartigen Orten zu residieren. Eine Jury aus Kreativköpfen findet für Sie die interessantesten Hotels Bayerns und wahre Orte für Augenmenschen: Es erwarten Sie Klöster, Weingüter, Gipfelhotels oder Herrenhäuser mit aufregender Historie, spektakulärer Lage, kulturellem Wert sowie einzigartigem Design."
 
 banner:
@@ -25,57 +25,69 @@ sections:
 features:
 
 - id: 1
-  title: Sightsleeping® City Passau
+  title: "Sightsleeping®: City&nbsp;Passau"
   bg-img: bg1
   img-main: sightleeping1
   description: "Passau ist ein Kaleidoskop schillernder Einzelteile aus Kunst, Kulinarik und Kultur, die ein buntes Gesamtbild ergeben. Egal wohin Sie blicken, in den verwinkelten Gassen der gemütlichen Stadt finden sich Galerien, Bühnen, Konzertsäle, Museen sowie Theater und verleihen der Stadt ein farbenprächtiges Gewand. Eingebettet zwischen den drei Flüssen Donau, Inn und Ilz bietet Passau neben der verträumten, barocken Architektur und den historischen Sehenswürdigkeiten auch landschaftlich absolute Einzigartigkeit."
   link: http://bit.ly/2xdRcwX
   cta: Weitere Infos
   style: bss-btn-outline
-  caption: © Foto Stadt Passau
 
-  subtitle1: Kunst & Kultur
-  modal-item1: 1
-  description-short1: Lernen Sie die vielfältige Kulturszene Passaus kennen und
+  pois:
 
-  subtitle2: Veranstaltungen
-  modal-item2: 2
-  description-short2: Besonders lohnenswert ist ein Aufenthalt in Passau während
+      - id: 1
+        subtitle: Kunst & Kultur
+        description-short: Lernen Sie die vielfältige Kulturszene Passaus kennen und
+        caption: "&nbsp;"
 
-  subtitle3: Kulinarik
-  modal-item3: 3
-  description-short3: Kulinarisch trumpfen die Passauer vor allem mit Süßspeisen auf
+      - id: 2
+        subtitle: Veranstaltungen
+        description-short: Besonders lohnenswert ist ein Aufenthalt in Passau während
+        caption: © Foto Stadt Passau
+
+      - id: 3
+        subtitle: Kulinarik
+        description-short: Kulinarisch trumpfen die Passauer vor allem mit Süßspeisen auf
+        caption: © Foto Stadt Passau
+
 
 - id: 2
-  title: Weitere Sightsleeping® Cities & Regions
+  title: Weitere Sightsleeping® Cities&nbsp;& Regions
   bg-img: bg2
   img-main: sightleeping2
   description: "Die Sightsleeping®-Jury hat neben Passau noch 5 weitere Städte und Regionen auserkoren: In Neumarkt in der Oberpfalz, Eichstätt, Bamberg, Rothenburg ob der Tauber und dem Blauen Land ist das Kulturangebot an Vielfalt kaum zu übertreffen. Traditionen, Kunst, Kulinarik und Architektur bereichern hier Ihren Urlaub mit zahlreichen neuen Eindrücken. Hinzu kommen traumhafte Landschaften, historische Schlösser und Burgen sowie prachtvolle Klöster in Regionen wie dem Blauen Land oder dem Bamberger Land. Sind Sie ein Augenmensch? Dann lassen Sie sich von Bayern verzaubern."
-  link:
-  caption: "  &nbsp;"
+  link: http://bit.ly/2x7Qfam
+  cta: Weitere Infos
+  style: bss-btn-outline
 
-  subtitle1: Neumarkt in der Oberpfalz
-  modal-item1: 4
-  description-short1: In Neumarkt in der Oberpfalz treffen Genuss, Gastfreundschaft
+  pois:
 
-  subtitle2: Eichstätt
-  modal-item2: 5
-  description-short2: Die Straßen im Zentrum der alten Universitätsstadt Eichstätt
+      - id: 4
+        subtitle: Neumarkt in der Oberpfalz
+        description-short: In Neumarkt in der Oberpfalz treffen Genuss, Gastfreundschaft
+        caption: "&nbsp;"
 
-  subtitle3: Rothenburg ob der Tauber
-  modal-item3: 6
-  description-short3: Rothenburg ob der Tauber war mit seinen gepflasterten Gassen
+      - id: 5
+        subtitle: Eichstätt
+        description-short: Die Straßen im Zentrum der alten Universitätsstadt Eichstätt
+        caption: "&nbsp;"
+
+      - id: 6
+        subtitle: Rothenburg ob der Tauber
+        description-short: Rothenburg ob der Tauber war mit seinen gepflasterten Gassen
+        caption: "&nbsp;"
+
+      - id: 7
+        subtitle: Bamberg & Bamberger&nbsp;Land
+        description-short: Bamberg liegt zwischen wilden Bachläufen, grün bewachsenen
+        caption: "&nbsp;"
+
+      - id: 8
+        subtitle: Das Blaue Land
+        description-short: Zu Füßen der majestätischen Alpen erstreckt sich das Blaue Land
+        caption: "&nbsp;"
 
 
-tiles1:
-
-  - subtitle: Bamberg & Bamberger&nbsp;Land
-    modal-item: 7
-    description-short: Bamberg liegt zwischen wilden Bachläufen, grün bewachsenen
-
-  - subtitle: Das Blaue Land
-    modal-item: 8
-    description-short: Zu Füßen der majestätischen Alpen erstreckt sich das Blaue Land
 
 slides:
 
@@ -117,12 +129,14 @@ slides:
 
 
 
-  {% include nav/page.html content=page.sections %}
+{% include nav/page.html content=page.sections %}
 
-  <div class=" vpad--xl " style="" id="section-0">
+<!-- Intro -->
+
+  <div class=" vpad--xl" style="" id="section-0">
     <div class="container">
       <div class="bss-body-text width width--xl text--center text--xxl  text--normal  ">
-        <div class="title title--lg text--bold bss-font-color-dark bss-subtitle-divider">Sightsleeping®: Die Idee dahinter</div>
+        <div class="title title--lg text--bold bss-font-color-dark bss-subtitle-divider">Sightsleeping®: Die&nbsp;Idee&nbsp;dahinter</div>
           <div class="space--sm "></div>
         <p>{{page.intro}}</p>
       </div>
@@ -130,137 +144,67 @@ slides:
     </div>
   </div>
 
+
+
+<!-- Content Details -->
+
 {% for feature in page.features %}
 
-
-<div class="vpad--lg bss-parallax" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.bg-img}}.jpg'); " id="section-{{feature.id}}" >
+<div class="vpad--lg  bg--light bss-parallax bss-remove-bg" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.bg-img}}.jpg'); " id="section-{{feature.id}}" >
 <div class="container">
-  <div class="space--xxl" ></div>
-
   <div class="row row--xl-6-6 row--gutters-md">
     <div class="col">
-  <div class="space--md"></div>
-      <div class="title title--lg text--bold bss-subtitle-divider bss-font-color-dark bss-lineheight--md">{{feature.title}}</div>
+      <div class="space--sm"></div>
+          <div class="space--xl bss-show"></div>
+      <div class="title title--lg text--bold bss-subtitle-divider bss-font-color-dark bss-mob-align bss-lineheight">{{feature.title}}</div>
       <div class="space--lg"></div>
-      <div class="bss-body-text text text--xxl text--black ">{{feature.description}}</div>
-  </div>
-    <div class="col">
+      <div class="bss-body-text text text--xxl text--black bss-mob-align ">{{feature.description}}</div>
+   </div>
+    <div class="col bss-mob-hide">
+        <div class="space--xxl bss-hidden"></div>
       <div class="bg-img bg-img--1-1 " style="background-image: url('{{site.img}}/content/overview/{{feature.img-main}}.jpg'); ">
 
       </div>
     </div>
   </div>
 
-  <div class="space--lg"></div>
-
   <div class="space--xl"></div>
 
 <div class="row row--gutters-md">
 
+  {% for poi in feature.pois %}
 
-      <div class="col col--lg-6 col--xxl-4 text--center" >
-        <a onclick="openModal();currentSlide({{feature.modal-item1}})" data-modal-item="highlight{{feature.modal-item1}}" data-modal-group="section" >
+      <div class="col col--lg-6 col--xl-4 text--center" >
+        <a onclick="openModal();currentSlide({{poi.id}})" data-modal-item="highlight{{poi.id}}" data-modal-group="section" >
         <div >
-          <div class="bss-modal-thumbn" style="background-image:url('{{site.img}}/content/overview/highlight{{feature.modal-item1}}.jpg'); ">
+          <div class="bss-modal-thumbn" style="background-image:url('{{site.img}}/content/overview/highlight{{poi.id}}.jpg'); ">
             <div class="bss-modal-thumbn-text bss-body-text text--xl text--black" >
-              <h4 class="title title--xxs text--bold text--upper bss-font-color-dark bss-lineheight--md">{{feature.subtitle1}}</h4>
+              <h4 class="title title--xxs text--bold text--upper bss-font-color-dark bss-lineheight--md">{{poi.subtitle}}</h4>
             <div class="space--xxxs  ">
-            {{feature.description-short1}}...<br></div>
+            {{poi.description-short}}...<br></div>
             <div class="space--xxs"></div>
               <div class=" text--bold bss-font-color-bright">Mehr erfahren</div>
             </div>
-
+            <div class=" text--bold text--white text--sm" style="margin:-8px;">{{poi.caption}}</div>
           </div>
 
         </div>
       </a>
     </div>
-
-
-    <div class="col col--lg-6 col--xxl-4 text--center" >
-      <a onclick="openModal();currentSlide({{feature.modal-item2}})" data-modal-item="highlight{{feature.modal-item2}}" data-modal-group="section" >
-      <div >
-        <div class="bss-modal-thumbn" style="background-image:url('{{site.img}}/content/overview/highlight{{feature.modal-item2}}.jpg'); ">
-          <div class="bss-modal-thumbn-text bss-body-text text--xl text--black" >
-            <h4 class="title title--xxs text--bold text--upper bss-font-color-dark bss-lineheight--md">{{feature.subtitle2}}</h4>
-          <div class="space--xxxs  ">
-          {{feature.description-short2}}...<br></div>
-          <div class="space--xxs"></div>
-            <div class=" text--bold bss-font-color-bright">Mehr erfahren</div>
-          </div>
-  <div class=" text--bold text--white text--sm" style="margin:-8px;">{{feature.caption}}</div>
-        </div>
-      </div>
-    </a>
-    </div>
-
-
-    <div class="col col--lg-6 col--xxl-4 text--center" >
-      <a  onclick="openModal();currentSlide({{feature.modal-item3}})" data-modal-item="highlight{{feature.modal-item3}}" data-modal-group="section" >
-      <div class="" >
-        <div class="bss-modal-thumbn" style="background-image:url('{{site.img}}/content/overview/highlight{{feature.modal-item3}}.jpg'); ">
-          <div class="bss-modal-thumbn-text bss-body-text text--xl text--black" >
-            <h4 class="title title--xxs text--bold text--upper bss-font-color-dark bss-lineheight--md">{{feature.subtitle3}}</h4>
-          <div class="space--xxxs  ">
-          {{feature.description-short3}}...<br></div>
-          <div class="space--xxs"></div>
-            <div class=" text--bold bss-font-color-bright">Mehr erfahren</div>
-          </div>
-          <div class=" text--bold text--sm" style="margin:-8px;">{{feature.caption}}</div>
-        </div>
-
-      </div>
-    </a>
-    </div>
-
+  {% endfor %}
 
 </div>
 </div>
 <div class="space--xxl text--center bss-body-text">
-  <a class=" text--bold {{feature.style}} bss-font-color-bright" href="{{feature.link}}" target:"_blank">{{feature.cta}} </a>
+  <a class=" text--bold {{feature.style}} bss-font-color-bright" href="{{feature.link}}" target="_blank">{{feature.cta}} </a>
 </div>
   <div class="space--md"></div>
 </div></div>
 {% endfor %}
 
-<div class=" vpad--xxs bss-parallax" style="background-image:url('{{site.img}}/content/{{page.id}}/bg2.jpg'); margin-top: -110px;">
-<div class="container"  >
-
-  <div class="row row--gutters-md">
-{% for tiles1 in page.tiles1 %}
-
-
-
-<div class="col col--lg-6 col--xxl-4 text--center" >
-  <a  onclick="openModal();currentSlide({{tiles1.modal-item}})" data-modal-item="highlight{{tiles1.modal-item}}" data-modal-group="section" >
-  <div  >
-    <div class="bss-modal-thumbn" style="background-image:url('{{site.img}}/content/overview/highlight{{tiles1.modal-item}}.jpg'); ">
-      <div class="bss-modal-thumbn-text bss-body-text text--xl text--black" >
-        <h4 class="title title--xxs text--bold text--upper bss-font-color-dark bss-lineheight--md">{{tiles1.subtitle}}</h4>
-      <div class="space--xxxs  ">
-      {{tiles1.description-short}}...<br></div>
-      <div class="space--xxs"></div>
-        <div class=" text--bold bss-font-color-bright">Mehr erfahren</div>
-      </div>
-    </div>
-
-  </div>
-</a>
-</div>
-
-
-
-{% endfor %}
-</div>
-</div>
-<div class="space--xxl  bss-body-text text--xl text--center">
-  <a class=" text--bold bss-btn-outline bss-font-color-bright" href="http://bit.ly/2x7Qfam" target:"_blank">Weitere Infos</a>
-</div>
-
-  <div class="space--xxl"></div>
-</div>
 
 <!-- Gallery /-->
+
 <div id="myModalWind" class="pt-modal_highlights">
 <div class="pt-prev" id="arrow1" onclick="plusSlides(-1)" ></div >
 <div  class="pt-next" id="arrow2" onclick="plusSlides(1)"></div >
@@ -280,15 +224,13 @@ slides:
     {% endfor %}
 
 
-
-
-
   </div>
 </div>
 
 
+<!-- Offers -->
 
-<div class=" vpad--xl " style="" id="section-0">
+<div class=" vpad--xl " style="" id="section-3">
   <div class="container">
     <div class="width width--xl text--center text--xxl bss-body-text ">
       <div class="title title--lg text--bold bss-font-color-dark bss-subtitle-divider">Unser Sightsleeping® Geheimtipp</div>
@@ -302,9 +244,6 @@ slides:
 </div>
 
 
-
-
-
 <script>
 
 // Get the modal
@@ -316,13 +255,11 @@ function openModal(){
   document.getElementById('arrow2').style.display = "block";
 }
 
-  function closeModalWind() {
-    document.getElementById('myModalWind').style.display = "none";
-
-  }
+function closeModalWind() {
+  document.getElementById('myModalWind').style.display = "none";
+}
 
   var slideIndex = 1;
-
 
   function plusSlides(n) {
     //alert(n);
@@ -346,11 +283,9 @@ function showSlides(n) {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-//	alert(event.target);
     if (event.target == modal) {
 
         modal.style.display = "none";
     }
 }
-
 </script>

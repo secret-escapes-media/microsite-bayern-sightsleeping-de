@@ -1,11 +1,11 @@
 # Site settings
-title: bayern-sightsleeping
+title: Sightsleeping® in Bayern
 client:
   name: Sightsleeping® in Bayern
-  link: ""
-core-se-link: https://www.secretescapes.com/current-sales
+  link: "https://www.bavaria.by/"
+core-se-link: https://www.secretescapes.de/aktuelle-angebote
 description: >
-  Abu Dhabi - Eine moderne Oase am Arabischen Golf, eingerahmt von spektakulären Mangrovenlandschaften, majestätischen Wüsten und exotischen Bilderbuchstränden – wie geschaffen für eine märchenhaft orientalische Auszeit voll futuristischer Highlights und architektonischer Superlative. Erleben Sie eine dynamische Metropole, in der Träume glamouröse Wirklichkeit werden bei einem kultivierten Citytrip oder einem exklusiven Strandurlaub zwischen Dünen und Mangroven.
+  Die Marke Sightsleeping® führt Sie zu den kulturellen und historischen Highlights Bayerns und lädt Sie ein, in ausgewählten Unterkünften und an einzigartigen Orten zu residieren.
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site

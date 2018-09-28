@@ -1,147 +1,38 @@
 
+<!-- Offer 1 -->
 
-
-<!-- offer 1
-
-<div class="abu-offers-tile clearfix">
-    <a href="#" class="abu-offers-link">
-      <div class="abu-offers-img " style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
-      <div class="abu-offers-text ">
-        <h2>Elegantes Resort im Wüstenstaat</h2>
-        <h4>Sheraton Abu Dhabi, Abu Dhabi, VAE</h4>
-        <p>Luxusglück im glitzernden Abu Dhabi – inkl. Flügen, Transfers & Frühstück</p>
-          <ul>
-              <li>Nur wenige Minuten von den Hotspots der Stadt in paradiesischer Idylle wohnen</li>
-              <li>Das sportliche Können beim Tennis oder am nahe gelegenen Golfplatz testen</li>
-              <li>Die beeindruckende Vielfalt des Landes bei Ausflügen in die Wüste kennenlernen</li>
-          </ul>
-          <p>Ab 622 € <s>906 €</s> / pro Person für 6 Nächte</p>
-          <div class="btn">
-              Zum Angebot
-          </div>
-      </div>
-    </a>
-</div>
-
-<div class="abu-offer-tile clearfix">
-            <a href="#">
-                <div class="abu-offer-img item" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
-                <div class="abu-offer-text item">
-                <h3 class="core-title core-title--xs">{{offer.title}}</h3>
-                <h4 class="">{{offer.location}}</h4>
-                  <div class="offer__description">{{offer.description}}</div>
-<div class="vpad--md"></div>
-                  {% if offer.saved %}
-                    <div class="offer__saved">
-                      <div class="offer__saved-label">Save up to&nbsp;</div>
-                      <div class="offer__saved-percent">{{offer.saved}}%</div>
-                    </div>
-                    <div class="offer__separator"></div>
-                    <div class="offer__details">
-                      <div>From <span class="offer__price">£{{offer.price}}</span></div>
-                      <div class="text--sm">{{offer.price-description}}</div>
-                      <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
-                    </div>
-
-                  </div>
-                  <div class="offer__bottom-right">
-                    <div class="offer__arrow"></div>
-                    <div class="abu-button">
-                        Zum Angebot
-                    </div>
-                  </div>
-                  {% endif %}
-
-
-
-            </a>
-        </div>
-
-/-->
-
-
+<a href="{{offer.link}}" target="_blank">
 <div class="bob" >
     <div class="bob__img">
-      <a href="#image-link">
         <div class="bg-img bg-img--3-2" style="background-image:url('{{site.img}}/offers/{{offer.id}}.jpg');"></div>
-      </a>
     </div>
     <div class="bob__text bss-body-text" >
-
-
-        <h3 class="title title--xs text--bold bss-font-color-dark">{{offer.title}}</h3>
-        <h4 class="bss-font-color-bright">{{offer.location}}</h4>
-        <div class="offer__description">{{offer.description}}</div>
-
-        <div class="offer__bottom">
-
+        <h3 class="title title--xs text--bold bss-font-color-dark bss-lineheight">{{offer.title}}</h3>
+        <div class="space--xs"></div>
+        <h4 class="bss-font-color-bright text--xl">{{offer.location}}</h4>
+        <div class="space--xs"></div>
+        <div class="offer__description text--black text--xl">{{offer.description}}</div>
+        <div class="offer__bottom text--black">
           <div class="offer__bottom-left">
 
             {% if offer.saved %}
               <div class="offer__saved">
-                <div class="offer__saved-label ">Sparen Sie bis zu&nbsp;</div>
-                <div class="offer__saved-percent bss-bg-color ">{{offer.saved}}%</div>
+                <div class="offer__saved-label bss-lineheight">Sparen Sie bis&nbsp;zu</div>
+                  <div class="space--xs"></div>
+                <div class="offer__saved-percent bss-bg-color text--xxxl" style="">{{offer.saved}}%</div>
               </div>
               <div class="offer__separator"></div>
             {% endif %}
 
-            <div class="offer__details">
+            <div class="offer__details text--left">
               <div>Ab <span class="offer__price bss-font-color-bright">{{offer.price}}€</span></div>
               <div class="text--sm">{{offer.price-description}}</div>
-
             </div>
-
           </div>
           <div class="offer__bottom-right">
             <div class="offer__arrow"></div>
           </div>
-
         </div>
-
-
-
     </div>
-
 </div>
-
-<!--
-<div class="offer">
-
-  <a class="offer__link" href="{{offer.link}}"><span class="btn abu-button">View Offer</span></a>
-
-  <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
-
-  <div class="offer__content">
-
-    <h3 class="core-title core-title--xs">{{offer.title}}</h3>
-    <h4 class="abu-font-color">{{offer.location}}</h4>
-    <div class="offer__description">{{offer.description}}</div>
-
-    <div class="offer__bottom">
-
-      <div class="offer__bottom-left">
-
-        {% if offer.saved %}
-          <div class="offer__saved">
-            <div class="offer__saved-label ">Save up to&nbsp;</div>
-            <div class="offer__saved-percent abu-bg-color abu-deco-font abu-deco-font--md">{{offer.saved}}%</div>
-          </div>
-          <div class="offer__separator"></div>
-        {% endif %}
-
-        <div class="offer__details">
-          <div>From <span class="offer__price abu-font-color">£{{offer.price}}</span></div>
-          <div class="text--sm">{{offer.price-description}}</div>
-          <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
-        </div>
-
-      </div>
-      <div class="offer__bottom-right">
-        <div class="offer__arrow"></div>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>/-->
+</a>
